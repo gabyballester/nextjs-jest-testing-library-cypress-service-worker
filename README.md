@@ -6,7 +6,17 @@ This is a web app that allows you to purchase tickets for a concert venue. It im
 - Integration testing
 - Testing e2e
 
-> **Note:** Test files are allocated in `__tests__` folder.
+> **Note1:** Test files are allocated in `__tests__` folder.
+
+> **Note2:** If you receive this warning "Expression produces a union type that is too complex to represent. ts(2590)", you have to go to the VS Code command palette, run the TypeScript and select TypeScript version command. **Make sure you have Use workspace version selected.**
+
+It will add to `.vscode\settings.json` this line:
+
+```bash
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
+```
 
 ## 🌐 Technology stack
 
