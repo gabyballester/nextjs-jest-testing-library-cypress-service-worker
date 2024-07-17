@@ -18,10 +18,6 @@ It will add to `.vscode\settings.json` this line:
 }
 ```
 
-## 🌐 Technology stack
-
-##### Nextjs - TypeScript - Chakra UI - Jest - React Testing Library - Cypress - Service Worker
-
 ## 📜 Scripts Available
 
 ```bash
@@ -60,7 +56,7 @@ cp .env.local_template .env.local
   <br/>
   > **Note:** If you don't have the openssl command on your command-line, feel free to create a random string by just typing a bunch of keys on your keyboard.
 
-1. Run the development server
+5. Run the development server
 
 ```bash
 npm run dev
@@ -78,7 +74,7 @@ npm run test
 
 The platform ensures high code quality and follows best practices.
 
-## 📚 Base libraries used
+## 📚 Technology stack
 
 - **Next.js v12.1.5 (pages) with-jest template:** As the chosen framework to build with. Check out the official documentation on the [Next.js with Jest template](https://nextjs.org/docs/app/building-your-application/testing/jest) website.
 
@@ -89,15 +85,20 @@ The platform ensures high code quality and follows best practices.
     - Main directory for routes: `pages/`
 
 - **React:** As the UI library in the background. Check out the official documentation on the [React](https://es.react.dev/) website.
+
 - **TypeScript:** Adding strong static types and advanced features to improve large-scale development and code maintainability. Check out the official documentation on the [TypeScript](https://www.typescriptlang.org/) website.
+
+- **Chakra UI (Theme and Components):** A modular and accessible component library providing a set of high-quality, customizable components to enhance UI development and improve the developer experience. Check out the official documentation on the [Chakra-UI](https://v2.chakra-ui.com/) website
+
 - **Eslint:** Ensures code quality by enforcing preconfigured standards and best practices. It performs static analysis on the code, identifying errors and patterns that impact functionality or readability. Check out the official documentation on the [Eslint for Nextjs](https://nextjs.org/docs/pages/building-your-application/configuring/eslint) website.
+
 - **Jest:** as the run testing engine. Check out the official documentation on the [Jest for Nextjs](https://nextjs.org/docs/app/building-your-application/testing/jest) website.
+
 - **React testing library:** As the library for testing React components. Check out the official documentation on the [React Testing Library ](https://testing-library.com/docs/react-testing-library/intro/) website.
 
-## 🎨 UX/UI
+- **Cypress:** As the end-to-end testing framework for web applications. Check out the official documentation on the [Cypress for Next](https://nextjs.org/docs/pages/building-your-application/testing/cypress) website.
 
-**Chakra UI (Theme and Components):** A modular and accessible component library providing a set of high-quality, customizable components to enhance UI development and improve the developer experience.
-Check out the official documentation on the [Chakra-UI](https://v2.chakra-ui.com/) website
+- **Mock Service Worker:** As the library for mocking API requests in tests. Check out the official documentation on the [ Mock Service Worker](https://mswjs.io/docs/cli/init/) website.
 
 ## 🌟 Special Features
 
