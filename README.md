@@ -30,16 +30,16 @@ It will add to `.vscode\settings.json` this line:
 
 ## 🚀 Getting Started
 
-1. Install the necessary dependencies: Before running the development server, make sure to install all project dependencies. You can do this with one of the following commands:
+1. Copy this template file for development
 
 ```bash
-npm install
+cp .env.development.local_template .env.development.local
 ```
 
 2. Copy this template file for development
 
 ```bash
-cp .env.development.local_template .env.development.local
+cp .env.test.local_template .env.test.local
 ```
 
 3. Copy this template file for production
@@ -48,7 +48,7 @@ cp .env.development.local_template .env.development.local
 cp .env.local_template .env.local
 ```
 
-4. In _.env.local_
+4. In _.env.local_ and _.env.test.local_:
 
 - Add long, hard-to-guess strings as the values for `NEXTAUTH_SECRET` and `REVALIDATION_SECRET`
 
@@ -56,7 +56,13 @@ cp .env.local_template .env.local
   <br/>
   > **Note:** If you don't have the openssl command on your command-line, feel free to create a random string by just typing a bunch of keys on your keyboard.
 
-5. Run the development server
+5. Install the necessary dependencies: Before running the development server, make sure to install all project dependencies. You can do this with one of the following commands:
+
+```bash
+npm install
+```
+
+6. Run the development server
 
 ```bash
 npm run dev
@@ -64,7 +70,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-6. Run tests
+7. Run tests
 
 ```bash
 npm run test
