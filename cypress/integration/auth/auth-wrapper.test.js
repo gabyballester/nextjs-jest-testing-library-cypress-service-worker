@@ -1,4 +1,4 @@
-describe("Auth flow tests for reservations page", () => {
+describe("Auth flow tests for auth related pages", () => {
 
   it("runs auth flow for successful login to protected reservations page", () => {
     // visit reservations page for the first show (id = 0)
@@ -94,7 +94,7 @@ describe("Auth flow tests for reservations page", () => {
     cy.findByRole("button", { name: /sign out/i }).should("exist");
     cy.findByRole("button", { name: /sign in/i }).should("not.exist");
   });
-  
+
   it("redirects to sign-in for protected pages", () => {
     cy.fixture("protected-pages.json").then((urls) => {
       urls.forEach(($url) => {
@@ -104,6 +104,24 @@ describe("Auth flow tests for reservations page", () => {
         cy.findByLabelText(/password/i).should("exist");
       });
     });
+  });
+
+  it("does not show sign-in page when already signed in", () => {
+    cy.task("db:reset").signIn(
+      Cypress.env("TEST_USER_EMAIL"),
+      Cypress.env("TEST_PASSWORD")
+    );
+
+    // access tickets page for first show
+    cy.visit("/reservations/0");
+
+    // make sure there's no sign-in page
+    cy.findByRole("heading", { name: /sign in to your account/i }).should(
+      "not.exist"
+    );
+
+    // make sure ticket purchase button shows
+    cy.findByRole("button", { name: /purchase/i }).should("exist");
   });
 
 })
