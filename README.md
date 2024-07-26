@@ -55,8 +55,10 @@ cp .env.local_template .env.local
 - Try this command to generate a random string: `openssl rand -hex 32`
   <br/>
   > **Note:** If you don't have the openssl command on your command-line, feel free to create a random string by just typing a bunch of keys on your keyboard.
+  
+- Add for Cypress Login tests: `CYPRESS_TEST_USER_EMAIL`, `CYPRESS_TEST_PASSWORD` and populate it widh credentials that match test database data.
 
-5. Install the necessary dependencies: Before running the development server, make sure to install all project dependencies. You can do this with one of the following commands:
+1. Install the necessary dependencies: Before running the development server, make sure to install all project dependencies. You can do this with one of the following commands:
 
 ```bash
 npm install
