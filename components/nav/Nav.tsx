@@ -12,7 +12,7 @@ import { SignOutButton } from "./SignOutButton";
 export function NavBar(): React.ReactElement {
   const { isLoading, isLoggedIn } = useSessionStatus();
   const { data: session } = useSession();
-  const userName = session?.user?.email ?? "My Profile";
+  const userName = session?.user?.email ?? "Info unavailable";
 
   const links = [
     { display: "Shows", route: routes.shows },
