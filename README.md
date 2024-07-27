@@ -1,4 +1,4 @@
-# 📱 Ticketing App
+# 📱 Ticketing App + Testing: Jest - React Testing Library - Cypress
 
 This is a web app that allows you to purchase tickets for a concert venue. It implements different kinds of testing.
 
